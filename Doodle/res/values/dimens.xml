@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="doodle_margin_right">15.0dip</dimen>
+    <dimen name="doodle_margin_left">15.0dip</dimen>
+    <dimen name="doodle_margin_top">15.0dip</dimen>
+    <dimen name="doodle_imgbtn_margin">10.0dip</dimen>
+    <dimen name="doodle_imgbtn_width">48.0dip</dimen>
+    <dimen name="doodle_imgbtn_height">48.0dip</dimen>
+    <dimen name="doodle_rect_width">40.0dip</dimen>
+    <dimen name="doodle_rect_height">40.0dip</dimen>
+    <dimen name="doodle_rect_padding">5.0dip</dimen>
+    
+    
+    <dimen name="doodle_round_width">35.0dip</dimen>
+    <dimen name="doodle_round_height">36.0dip</dimen>
+    <dimen name="doodle_round_padding_small">11.0dip</dimen>
+    <dimen name="doodle_round_padding_normal">9.0dip</dimen>
+    <dimen name="doodle_round_padding_middle">7.0dip</dimen>
+    <dimen name="doodle_round_padding_large">5.0dip</dimen>
+    
+</resources>

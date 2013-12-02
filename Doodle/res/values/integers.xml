@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="integer" name="doodle_animation">600</item>
+    <item type="integer" name="doodle_half_animation">300</item>
+    <item type="integer" name="doodle_finish_animation">400</item>
+</resources>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <rotate
+        android:duration="@integer/doodle_animation"
+        android:fromDegrees="0"
+        android:interpolator="@android:anim/accelerate_decelerate_interpolator"
+        android:pivotX="50%"
+        android:pivotY="50%"
+        android:toDegrees="-360" />
+
+    <scale
+        android:duration="@integer/doodle_half_animation"
+        android:fillAfter="false"
+        android:fromXScale="1.0"
+        android:fromYScale="1.0"
+        android:interpolator="@android:anim/accelerate_interpolator"
+        android:pivotX="50%"
+        android:pivotY="50%"
+        android:toXScale="0.8"
+        android:toYScale="0.8" />
+    <scale
+        android:duration="@integer/doodle_half_animation"
+        android:fillAfter="false"
+        android:fromXScale="1.0"
+        android:fromYScale="1.0"
+        android:interpolator="@android:anim/decelerate_interpolator"
+        android:pivotX="50%"
+        android:pivotY="50%"
+        android:startOffset="@integer/doodle_half_animation"
+        android:toXScale="1.25"
+        android:toYScale="1.25" />
+
+    <alpha
+        android:duration="@integer/doodle_half_animation"
+        android:fillAfter="false"
+        android:fromAlpha="1.0"
+        android:interpolator="@android:anim/accelerate_interpolator"
+        android:toAlpha="0.5" />
+    <alpha
+        android:duration="@integer/doodle_half_animation"
+        android:fillAfter="false"
+        android:fromAlpha="1.0"
+        android:interpolator="@android:anim/decelerate_interpolator"
+        android:startOffset="@integer/doodle_half_animation"
+        android:toAlpha="2.0" />
+
+</set>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:minHeight="@dimen/doodle_imgbtn_height"
+    android:orientation="horizontal"
+    android:visibility="gone" >
+
+    <ImageButton
+        android:layout_width="@dimen/doodle_round_width"
+        android:layout_height="@dimen/doodle_round_height"
+        android:background="@drawable/doodle_selector_round"
+        android:padding="@dimen/doodle_round_padding_large"
+        android:src="@drawable/doodle_shape_round"
+        android:tag="24" />
+
+    <ImageButton
+        android:layout_width="@dimen/doodle_round_width"
+        android:layout_height="@dimen/doodle_round_height"
+        android:background="@drawable/doodle_selector_round"
+        android:padding="@dimen/doodle_round_padding_middle"
+        android:src="@drawable/doodle_shape_round"
+        android:tag="20" />
+
+    <ImageButton
+        android:layout_width="@dimen/doodle_round_width"
+        android:layout_height="@dimen/doodle_round_height"
+        android:background="@drawable/doodle_selector_round"
+        android:padding="@dimen/doodle_round_padding_normal"
+        android:src="@drawable/doodle_shape_round"
+        android:tag="16" />
+
+    <ImageButton
+        android:layout_width="@dimen/doodle_round_width"
+        android:layout_height="@dimen/doodle_round_height"
+        android:background="@drawable/doodle_selector_round"
+        android:padding="@dimen/doodle_round_padding_small"
+        android:src="@drawable/doodle_shape_round"
+        android:tag="12" />
+
+</LinearLayout>
