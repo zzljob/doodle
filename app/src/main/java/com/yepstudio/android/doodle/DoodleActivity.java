@@ -17,54 +17,52 @@
 
 package com.yepstudio.android.doodle;
 
-import android.content.Intent;
+import android.graphics.Bitmap;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Looper;
 import android.support.v7.app.AppCompatActivity;
-import android.view.Menu;
-import android.view.MenuItem;
-import android.view.View;
-import android.widget.Button;
 
 import com.yepstudio.android.library.doodle.Doodle;
 
-
 /**
+ * 涂鸦
  * Created by J.O.B on 2015-05-27.
  */
-public class MainActivity extends AppCompatActivity {
+public class DoodleActivity extends AppCompatActivity {
 
-    private Button mBtnGo;
+    private Doodle doodle;
+    private Handler handler;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        mBtnGo = (Button) findViewById(R.id.btn_go);
-        mBtnGo.setOnClickListener(new View.OnClickListener() {
+
+        setContentView(R.layout.activity_doodle);
+
+        handler = new Handler(Looper.getMainLooper());
+        doodle = (Doodle) findViewById(R.id.doodle);
+
+        doodle.setOnDoodleListener(new Doodle.OnDoodleListener() {
             @Override
-            public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, DoodleActivity.class));
+            public void onTogglePaintAndColor(boolean hasAnimation, boolean isShow) {
+
+            }
+
+            @Override
+            public void onDrawPaint(boolean isClear) {
+
+            }
+
+            @Override
+            public void onSaveCanvas(Bitmap mBitmap) {
+                handler.postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        finish();
+                    }
+                }, 600);
             }
         });
-    }
-
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main, menu);
-        return true;
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        int id = item.getItemId();
-
-        if (id == R.id.action_settings) {
-            return true;
-        } else if (id == R.id.action_clear) {
-            return true;
-        }
-
-        return super.onOptionsItemSelected(item);
     }
 }

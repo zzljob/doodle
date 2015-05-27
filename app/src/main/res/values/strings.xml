@@ -2,6 +2,9 @@
 <resources>
     <string name="app_name">Doodle</string>
 
+    <string name="label_main">Doodle</string>
+    <string name="label_doodle">Drawing</string>
+
     <string name="action_settings">Settings</string>
     <string name="action_clear">clear</string>
 </resources>
