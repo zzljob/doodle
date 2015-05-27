@@ -5,3 +5,9 @@
 .DS_Store
 /build
 /captures
+/library/library.iml
+/library/build
+/app/app.iml
+/app/build
+/.idea
+/Doodle.iml
