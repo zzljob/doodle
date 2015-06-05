@@ -26,4 +26,4 @@ dependencies {
 }
 
 
-//apply from: 'https://raw.githubusercontent.com/zzljob/gradle-publish/master/bintray.gradle'
+apply from: 'https://raw.githubusercontent.com/zzljob/gradle-publish/master/bintray.gradle'
