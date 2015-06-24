@@ -1,5 +1,5 @@
 apply plugin: 'com.jfrog.bintray'
-
+project.archivesBaseName = PROJ_ARTIFACTID
 bintray {
     user = BINTRAY_USER
     key = BINTRAY_KEY
@@ -14,7 +14,7 @@ bintray {
         websiteUrl = PROJ_WEBSITEURL
         issueTrackerUrl = PROJ_ISSUETRACKERURL
         vcsUrl = PROJ_VCSURL
-        licenses = PROJ_LICENSES
+        licenses = ['Apache-2.0']
         publicDownloadNumbers = true
     }
 }
