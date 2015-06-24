@@ -24,7 +24,6 @@
             android:configChanges="keyboardHidden|orientation"
             android:label="@string/label_doodle"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.Doodle"
             android:windowSoftInputMode="stateHidden|adjustResize">
             <intent-filter>
                 <action android:name="android.intent.action.view" />
