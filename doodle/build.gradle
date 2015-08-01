@@ -4,6 +4,10 @@ android {
     compileSdkVersion 22
     buildToolsVersion '22.0.1'
 
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_6
+        targetCompatibility JavaVersion.VERSION_1_6
+    }
     defaultConfig {
         minSdkVersion 8
         targetSdkVersion 22
@@ -12,7 +16,9 @@ android {
     }
     buildTypes {
         release {
+            debuggable false
             minifyEnabled false
+            shrinkResources true
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
@@ -26,5 +32,5 @@ dependencies {
 }
 
 
-apply from: 'install.gradle'
-apply from: 'bintray.gradle'
+//apply from: 'install.gradle'
+//apply from: 'bintray.gradle'

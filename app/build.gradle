@@ -1,9 +1,14 @@
 apply plugin: 'com.android.application'
+apply plugin: 'com.getkeepsafe.dexcount'
 
 android {
     compileSdkVersion 22
     buildToolsVersion '22.0.1'
 
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_6
+        targetCompatibility JavaVersion.VERSION_1_6
+    }
     defaultConfig {
         applicationId "com.yepstudio.android.doodle"
         minSdkVersion 14
@@ -13,7 +18,9 @@ android {
     }
     buildTypes {
         release {
-            minifyEnabled false
+            debuggable false
+            minifyEnabled true
+            shrinkResources true
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
@@ -21,7 +28,7 @@ android {
         abortOnError false
     }
     dexOptions {
-        incremental true
+        incremental false
     }
 }
 
